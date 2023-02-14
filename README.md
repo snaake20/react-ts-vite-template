@@ -36,6 +36,6 @@ yarn build
 ```
 yarn build && yarn preview 
 ```
-PS:don't have to run yarn build if dist folder exists (you already did a build)
+#### PS: don't have to run yarn build if dist folder exists (you already did a build)
 
-##### bundled with Vite v4.1.1
+### bundled with Vite v4.1.1
