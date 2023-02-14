@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "*": ["*"],
+      "actions/*": ["state/actions/*"],
+      "assets/*": ["assets/*"],
+      "components/*": ["components/*"],
+      "context/*": ["state/context/*"],
+      "hooks/*": ["state/hooks/*"],
+      "pages/*": ["pages/*"],
+      "reducers/*": ["state/reducers/*"],
+      "services/*": ["services/*"],
+      "styles/*": ["styles/*"],
+      "types/*": ["types/*"],
+      "utils/*": ["utils/*"]
+      //add the same aliases in vite.config.js
+    },
+    "types": ["node"],
+    "typeRoots": ["src/types"]
+  },
+  "include": [
+    ".eslintrc.cjs",
+    // tsconfig should point to eslint (because eslint does point to tsconfig)
+    "vite.config.ts",
+    "./src",
+    "./src/*.ts",
+    "./src/*.tsx"
+  ],
+  "exclude": ["node_modules/", "dist", "public", ".husky"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
