@@ -2,3 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npx --no-install lint-staged
+
+if [ "$(git ls-files | grep -cP "\.test\.")" -gt 1 ]; then
+  yarn test
+fi

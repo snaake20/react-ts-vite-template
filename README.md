@@ -13,13 +13,13 @@
 
 - Eslint (airbnb config)
 - Prettier (base config)
-- Husky (precommit hook with lint-staged)
+- Husky (pre-commit hook with lint-staged)
 - TailwindCSS (postCSS and autoprefixer included)
 - Vitest (test library identical to jest, using jsdom and testing-library for component unit-testing)
 
 ## First start:
 ```
-yarn && yarn prepare
+yarn
 ```
 
 ## Local development:
@@ -36,6 +36,6 @@ yarn build
 ```
 yarn build && yarn preview 
 ```
-#### PS: don't have to run yarn build if dist folder exists (you already did a build)
+#### PS: don't have to run yarn build if dist folder exists
 
-### bundled with Vite v4.1.1
+### bundled with Vite v4.1.1 (swc compiler)
