@@ -3,6 +3,6 @@
 
 npx --no-install lint-staged
 
-if [ "$(git ls-files | grep -cP "\.test\.")" -gt 1 ]; then
+if [ "$(cd .. && git ls-files | grep -c "\.test\.")" -gt 0 ]; then
   yarn test
 fi

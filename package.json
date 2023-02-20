@@ -10,7 +10,8 @@
     "lint": "eslint src/**/*.{ts,tsx}",
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
     "prepare": "husky install",
-    "test": "vitest",
+    "test": "vitest --run",
+    "test:watch": "vitest",
     "coverage": "vitest run --coverage && start coverage/index.html"
   },
   "dependencies": {
