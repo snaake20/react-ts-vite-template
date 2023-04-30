@@ -1,12 +1,12 @@
 ## Requirements:
 
-- Node v18.14.0
-- TypeScript v4.9.5
-- Yarn v1.22.19
+- node
+- typeScript
+- pnmp
 
 ## Main Libraries:
 
-- React
+- react
 - react-router-dom
 
 ## Utilities:
@@ -19,23 +19,23 @@
 
 ## First start:
 ```
-yarn
+pnpm i
 ```
 
 ## Local development:
 ```
-yarn dev
+pnpm dev
 ```
 
 ## Build:
 ```
-yarn build
+pnpm build
 ```
 
 ## Preview build:
 ```
-yarn build && yarn preview 
+pnpm build && pnpm preview 
 ```
-#### PS: don't have to run yarn build if dist folder exists
+#### PS: don't have to run pnpm build if dist folder exists
 
-### bundled with Vite v4.1.1 (swc compiler)
+### bundled with `vite` (`swc compiler`)
