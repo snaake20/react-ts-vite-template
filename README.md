@@ -2,7 +2,7 @@
 
 - node
 - typeScript
-- pnmp
+- pnpm
 
 ## Main Libraries:
 
