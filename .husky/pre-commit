@@ -4,5 +4,5 @@
 npx --no-install lint-staged
 
 if [ "$(cd .. && git ls-files | grep -c "\.test\.")" -gt 0 ]; then
-  yarn test
+  pnpm test
 fi
