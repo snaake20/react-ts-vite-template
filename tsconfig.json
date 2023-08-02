@@ -18,20 +18,16 @@
     "jsx": "react-jsx",
     "paths": {
       "*": ["*"],
-      "actions/*": ["state/actions/*"],
       "assets/*": ["assets/*"],
       "components/*": ["components/*"],
-      "context/*": ["state/context/*"],
       "hooks/*": ["state/hooks/*"],
       "pages/*": ["pages/*"],
-      "reducers/*": ["state/reducers/*"],
-      "services/*": ["services/*"],
       "styles/*": ["styles/*"],
       "types/*": ["types/*"],
       "utils/*": ["utils/*"]
       //add the same aliases in vite.config.js
     },
-    "types": ["node"],
+    "types": [],
     "typeRoots": ["src/types"]
   },
   "include": [
