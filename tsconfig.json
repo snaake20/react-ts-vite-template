@@ -14,13 +14,13 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
+    "noEmit": true,
     "paths": {
       "*": ["*"],
       "assets/*": ["assets/*"],
       "components/*": ["components/*"],
-      "hooks/*": ["state/hooks/*"],
+      "hooks/*": ["hooks/*"],
       "pages/*": ["pages/*"],
       "styles/*": ["styles/*"],
       "types/*": ["types/*"],
@@ -33,6 +33,7 @@
   "include": [
     ".eslintrc.cjs",
     // tsconfig should point to eslint (because eslint does point to tsconfig)
+    "tailwind.config.cjs",
     "vite.config.ts",
     "./src",
     "./src/*.ts",
